@@ -1,11 +1,6 @@
-// js/script.js
-
 (function () {
     'use strict';
 
-    // -------------------------
-    // --- ESTADO (STATE) ---
-    // -------------------------
     const state = {
         dbSalas: [
             { id: 1, codigo: 'C10', tipo: 'Lab. Informática', capacidade: 32, localizacao: 'Bloco C' },
@@ -18,14 +13,11 @@
             { id: 102, salaId: 3, periodo: { inicio: '2025-08-04', fim: '2025-12-12' }, horario: { inicio: '09:00', fim: '11:00' }, diasSemana: [1, 3], disciplina: 'Física Experimental', professor: 'Prof. Santos', cpf: '222.222.222-22' },
             { id: 103, salaId: 4, periodo: { inicio: '2025-09-10', fim: '2025-12-10' }, horario: { inicio: '19:00', fim: '22:00' }, diasSemana: [3], disciplina: 'Formatura', professor: 'Reitoria', cpf: '333.333.333-33' }
         ],
-        fpInstance: null, // Flatpickr instance
+        fpInstance: null, 
         diasMap: { 0: 'Dom', 1: 'Seg', 2: 'Ter', 3: 'Qua', 4: 'Qui', 5: 'Sex', 6: 'Sab' },
         tiposCores: { 'Lab. Informática': 'lab-info', 'Sala de Aula': 'sala-aula', 'Lab. Física': 'lab-fisica', 'Auditório': 'auditorio' }
     };
 
-    // -------------------------
-    // --- ELEMENTOS DO DOM ---
-    // -------------------------
     const elements = {
         salasGrid: document.getElementById('salas-grid'),
         agendamentosList: document.getElementById('agendamentos-list'),
@@ -40,9 +32,6 @@
         formNovaSala: document.getElementById('formNovaSala')
     };
 
-    // -------------------------
-    // --- FUNÇÕES UTILITÁRIAS ---
-    // -------------------------
     const utils = {
         formatBR: (dateISO) => dateISO ? dateISO.split('-').reverse().join('/') : '',
         formatISO: (date) => date ? date.toISOString().split('T')[0] : null,
@@ -89,9 +78,6 @@
         }
     };
 
-    // -------------------------
-    // --- FUNÇÕES DE RENDERIZAÇÃO ---
-    // -------------------------
     const render = {
         salas: (salasFiltradas = state.dbSalas) => {
             elements.salasGrid.innerHTML = salasFiltradas.length === 0
@@ -164,9 +150,7 @@
         }
     };
 
-    // -------------------------
-    // --- MANIPULADORES DE EVENTOS (HANDLERS) ---
-    // -------------------------
+
     const handlers = {
         aplicarFiltros: () => {
             const termo = elements.searchInput.value.toLowerCase();
@@ -303,17 +287,13 @@
             });
         }
     };
-    
-    // -------------------------
-    // --- INICIALIZAÇÃO ---
-    // -------------------------
+
     function init() {
-        if (!elements.salasGrid) return; // Garante que o script só rode na página principal.html
+        if (!elements.salasGrid) return; 
 
         elements.modalAgendarInstance = new bootstrap.Modal(elements.modalAgendarEl);
         elements.modalNovaSalaInstance = new bootstrap.Modal(document.getElementById('modalNovaSala'));
         
-        // Adiciona Listeners
         ['input', 'change'].forEach(evt => {
             elements.searchInput.addEventListener(evt, handlers.aplicarFiltros);
             elements.tipoSelect.addEventListener(evt, handlers.aplicarFiltros);
@@ -325,12 +305,12 @@
         elements.agendamentosList.addEventListener('click', handlers.clickAgendamentosList);
         elements.modalAgendarEl.addEventListener('show.bs.modal', handlers.showModalAgendar);
 
-        // Renderização Inicial
         render.filtros();
         render.salas();
         render.agendamentos();
     }
 
     document.addEventListener('DOMContentLoaded', init);
+
 
 })();

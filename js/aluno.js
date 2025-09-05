@@ -1,10 +1,6 @@
-// js/aluno.js
-
 (function () {
     'use strict';
 
-    // Em uma aplicação real, estes dados viriam de uma API.
-    // Aqui, duplicamos para simular o ambiente.
     const db = {
         salas: [
             { id: 1, codigo: 'C10', tipo: 'Lab. Informática', capacidade: 32, localizacao: 'Bloco C' },
@@ -41,7 +37,6 @@
 
         const periodoFmt = `${formatBrDate(agendamento.periodo.inicio)} até ${formatBrDate(agendamento.periodo.fim)}`;
 
-        // A estrutura do card do aluno (sem ícones de detalhe)
         return `
             <div class="agendamento-card">
                 <div class="agendamento-header">
@@ -89,5 +84,6 @@
     }
 
     document.addEventListener('DOMContentLoaded', renderAulas);
+
 
 })();

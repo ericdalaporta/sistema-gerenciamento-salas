@@ -1,8 +1,3 @@
-/* css/styles.css */
-
-/* =================================================================== */
-/* --- VARIÁVEIS GLOBAIS (Cores e Padrões) --- */
-/* =================================================================== */
 :root {
     --bs-body-bg: #f3f3f3;
     --bs-body-color: #212529;
@@ -13,9 +8,6 @@
     --text-muted: #6c757d;
 }
 
-/* =================================================================== */
-/* --- ESTILOS GERAIS --- */
-/* =================================================================== */
 body {
     background: var(--bs-body-bg);
     color: var(--bs-body-color);
@@ -27,9 +19,6 @@ body {
     margin-right: 12px;
 }
 
-/* =================================================================== */
-/* --- LAYOUT PRINCIPAL --- */
-/* =================================================================== */
 .main-container {
     max-width: 1280px;
     margin: auto;
@@ -45,11 +34,6 @@ body {
     background-color: var(--bs-body-bg);
 }
 
-/* =================================================================== */
-/* --- COMPONENTES --- */
-/* =================================================================== */
-
-/* --- Cards --- */
 .login-card,
 .room-card,
 .agendamento-card,
@@ -143,7 +127,6 @@ body {
     border-radius: 0.5rem;
 }
 
-/* --- Navegação por Abas (Tabs) --- */
 .nav-tabs {
     border-bottom: 1px solid var(--card-border-color);
 }
@@ -172,7 +155,6 @@ body {
     margin-right: 8px;
 }
 
-/* --- Formulários --- */
 .form-control,
 .form-select {
     background-color: transparent;
@@ -192,7 +174,6 @@ body {
     box-shadow: none !important;
 }
 
-/* --- Badges --- */
 .badge.bg-lab-info { background-color: #22c55e !important; }
 .badge.bg-sala-aula { background-color: #64748b !important; }
 .badge.bg-lab-fisica { background-color: #3b82f6 !important; }
@@ -226,7 +207,6 @@ body {
     transition: background-color 0.2s ease;
 }
 
-/* --- Botões e Ações --- */
 .room-card .room-card-actions {
     display: flex;
     align-items: center;
@@ -260,7 +240,6 @@ body {
     border-width: 1px;
 }
 
-/* --- Outros --- */
 .status-disponivel {
     color: #198754;
     font-weight: 500;
@@ -275,9 +254,6 @@ body {
     display: none;
 }
 
-/* =================================================================== */
-/* --- DESIGN RESPONSIVO (Desktop First) --- */
-/* =================================================================== */
 @media (min-width: 768px) {
     .dias-mobile {
         display: none !important;
@@ -287,19 +263,12 @@ body {
     }
 }
 
-/* =================================================================== */
-/* --- DESIGN RESPONSIVO (Mobile) --- */
-/* =================================================================== */
-/* =================================================================== */
-/* --- DESIGN RESPONSIVO (Mobile - Versão Original Restaurada) --- */
-/* =================================================================== */
 @media (max-width: 767px) {
     body {
         font-size: 14px;
         min-height: 100vh;
     }
 
-    /* --- Layout e Espaçamento --- */
     .main-container {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
@@ -325,7 +294,6 @@ body {
         margin-bottom: 0 !important;
     }
 
-    /* --- Cards --- */
     .filters-card,
     .agendamento-card {
         padding: 1rem;
@@ -356,7 +324,6 @@ body {
         border-width: 1px;
     }
 
-    /* --- Navegação por Abas (Tabs) --- */
     .nav-tabs {
         flex-direction: row !important;
         justify-content: center !important;
@@ -398,7 +365,6 @@ body {
         display: none !important;
     }
 
-    /* --- Página de Login --- */
     .login-container {
         align-items: center;
         min-height: 100vh;
@@ -420,7 +386,6 @@ body {
         text-align: center;
     }
 
-    /* --- Filtros --- */
     .filters-card .row {
         flex-direction: column !important;
         gap: 0.25rem !important;
@@ -431,7 +396,6 @@ body {
         padding: 0 !important;
     }
 
-    /* --- Agendamentos --- */
     .dias-desktop {
         display: none;
     }
@@ -442,7 +406,6 @@ body {
         margin-top: 0.75rem;
     }
     
-    /* Correção para o espaçamento no card de agendamento em telas móveis */
     .agendamento-card .row.g-3 {
         --bs-gutter-y: 0;
     }
@@ -453,3 +416,4 @@ body {
         margin-bottom: 0;
     }
 }
+

@@ -417,3 +417,18 @@ body {
     }
 }
 
+.main-container {
+    position: relative;
+}
+
+.btn-mobile-sair {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    z-index: 10;
+    background-color: #6c757d;
+
+    font-size: 0.9rem;          
+    padding: 0.4rem 0.8rem;     
+    line-height: 1.5;        
+}

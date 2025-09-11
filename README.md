@@ -9,7 +9,7 @@ Sistema web front-end para agendamento e gerenciamento de ambientes universitár
 - [Pré-requisitos](#pré-requisitos)  
 - [Instalação](#instalação)  
 - [Instruções de Uso](#instruções-de-uso)  
-- [Fluxograma do Sistema](#fluxo-do-sistema)  
+- [Fluxograma do Sistema](#fluxograma-do-sistema)  
 - [Contato](#contato)  
 - [Bibliografia](#bibliografia)  
 

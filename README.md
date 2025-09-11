@@ -49,7 +49,7 @@ Para executar e testar a aplicação, siga os passos:
 
 2.  Simule o acesso com um dos perfis disponíveis:
     * **Sou Servidor:** Representa o perfil de administrador. Ao clicar em "Entrar", você será levado ao painel principal (`principal.html`) com acesso a todas as funcionalidades de gerenciamento, assim como ver os próprios agendamentos.
-    * **Sou Aluno:** Representa o perfil de usuário final. Ao clicar em "Entrar", você será levado a uma página (`aluno.html`) que exibe os agendamentos de ambientes acadêmicos realizados por seus professores, assim como a disciplina, horário e nome do professor.
+    * **Sou Aluno:** Representa o perfil de usuário final. Ao clicar em "Entrar", você será levado a uma página (`aluno.html`) que exibe os agendamentos de ambientes universitários realizados por seus professores, assim como a disciplina, horário e nome do professor.
 
 3.  **No painel do Servidor, você pode:**
     * Visualizar todos os ambientes cadastrados.

@@ -1,6 +1,6 @@
 # Portal de Agendamento 
 
-Sistema web front-end para agendamento e gerenciamento ambientes acadêmicos - salas e laboratórios.
+Sistema web front-end para agendamento e gerenciamento de ambientes acadêmicos - salas e laboratórios.
 
 ![PrintSalasDisponiveisECadastro](/assets/Print.png)
 
@@ -67,7 +67,7 @@ config:
   layout: dagre
 ---
 flowchart TD
- subgraph exemplo["Fluxograma do Portal de Agendamento"]
+ subgraph exemplo["Portal de Agendamento"]
         B("Página de Login")
         A[/"Usuário abre index.html"/]
         C{"Escolhe Perfil"}

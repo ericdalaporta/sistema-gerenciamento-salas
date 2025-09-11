@@ -1,4 +1,4 @@
-# Sistema de Gerenciamento de Ambientes Acadêmicos
+# Portal de Agendamento 
 
 Sistema web front-end para agendamento e gerenciamento ambientes acadêmicos - salas e laboratórios.
 

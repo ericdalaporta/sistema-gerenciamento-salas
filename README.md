@@ -1,6 +1,6 @@
 # Portal de Agendamento 
 
-Sistema web front-end para agendamento e gerenciamento de ambientes acadêmicos - salas e laboratórios.
+Sistema web front-end para agendamento e gerenciamento de ambientes universitários - salas e laboratórios.
 
 ![PrintSalasDisponiveisECadastro](/assets/Print.png)
 

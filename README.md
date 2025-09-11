@@ -60,17 +60,32 @@ Para executar e testar a aplicação, siga os passos:
 ## Fluxo do Sistema
 
 ```mermaid
+---
+config:
+  theme: mc
+  look: classic
+  layout: dagre
+---
 flowchart TD
-    subgraph exemplo["exemplo"]
-        A["Usuário abre index.html"] --> B("Página de Login")
-        B --> C{Escolhe Perfil}
-        C -- "Sou Servidor" --> D("Painel principal")
-        C -- "Sou Aluno" --> E("Página do Aluno")
-        D --> F[Visualizar Ambientes]
-        D --> G[Adicionar Sala]
-        D --> H[Agendar Sala]
-        E --> I[Visualizar Agendamentos]
-    end
+ subgraph exemplo["Portal de Agendamento"]
+        B("Página de Login")
+        A[/"Usuário abre index.html"/]
+        C{"Escolhe Perfil"}
+        D("Painel principal")
+        E("Página do Aluno")
+        F["Visualizar Ambientes"]
+        G["Adicionar Sala"]
+        H["Agendar Sala"]
+        I["Visualizar Agendamentos"]
+  end
+    A --> B
+    B --> C
+    C -- Sou Servidor --> D
+    C -- Sou Aluno --> E
+    D --> F & G & H
+    E --> I
+    style exemplo stroke:none
+
 ```
 
 ## Contato

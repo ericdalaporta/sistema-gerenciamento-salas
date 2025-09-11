@@ -2,7 +2,7 @@
 
 Sistema web front-end para agendamento e gerenciamento de salas e ambientes universitários.
 
-![PrintSalasDisponiveisECadastro](/assets/Print1.png)
+![PrintSalasDisponiveisECadastro](/assets/Print.png)
 ![PrintAgendamentos](/assets/Print2.png)
 
 ## Sumário

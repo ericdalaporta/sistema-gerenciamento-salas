@@ -2,11 +2,15 @@
 
 Sistema web front-end para agendamento e gerenciamento de salas e ambientes universitários.
 
+![PrintSalasDisponiveisECadastro](/assets/Print1.png)
+![PrintAgendamentos](/assets/Print2.png)
+
 ## Sumário
 
 - [Pré-requisitos](#pré-requisitos)  
 - [Instalação](#instalação)  
 - [Instruções de Uso](#instruções-de-uso)  
+- [Fluxo do Sistema](#fluxo-do-sistema)  
 - [Contato](#contato)  
 - [Bibliografia](#bibliografia)  
 
@@ -54,15 +58,31 @@ Para executar e testar a aplicação, siga os passos:
     * Clicar em **"Adicionar Sala"** para cadastrar um novo ambiente.
     * Clicar em **"Agendar"** em um dos cards para marcar um horário, definindo período, dias da semana e disciplina.
 
+## Fluxo do Sistema
+
+```mermaid
+flowchart TD
+    subgraph exemplo["exemplo"]
+        A["Usuário abre index.html"] --> B("Página de Login")
+        B --> C{Escolhe Perfil}
+        C -- "Sou Servidor" --> D("Painel principal")
+        C -- "Sou Aluno" --> E("Página do Aluno")
+        D --> F[Visualizar Ambientes]
+        D --> G[Adicionar Sala]
+        D --> H[Agendar Sala]
+        E --> I[Visualizar Agendamentos]
+    end
+```
+
 ## Contato
 
-O repositório foi originalmente desenvolvido por **Eric Dala Porta**, Email para contato: ericdasilvadalaporta@gmail.com
+O repositório foi originalmente desenvolvido por Eric Dala Porta, Email para contato: ericdasilvadalaporta@gmail.com
 
 ## Bibliografia
 
 A documentação das principais ferramentas e bibliotecas utilizadas no projeto pode ser encontrada nos links abaixo:
 
 - [Documentação Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [Documentação Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Documentação Bootstrap Icons](https://icons.getbootstrap.com/) 
 - [Documentação Flatpickr (Calendário)](https://flatpickr.js.org/)
 - [Google Fonts (Inter)](https://fonts.google.com/specimen/Inter)

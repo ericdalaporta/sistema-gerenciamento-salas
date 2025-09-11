@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Ambientes Acadêmicos
 
-Sistema web front-end para agendamento e gerenciamento de salas e ambientes universitários.
+Sistema web front-end para agendamento e gerenciamento ambientes acadêmicos - salas e laboratórios.
 
 ![PrintSalasDisponiveisECadastro](/assets/Print.png)
 

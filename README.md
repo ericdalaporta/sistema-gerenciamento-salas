@@ -29,12 +29,12 @@ O projeto é uma aplicação front-end que utiliza apenas HTML, CSS e JavaScript
 1.  Como o projeto não possui dependências de pacotes, não há um processo de instalação complexo. Basta clonar o repositório para sua máquina local:
 
     ```bash
-    git clone https://github.com/ericdalaporta/sistema-gerenciamento-salas.git
+    git clone https://github.com/ericdalaporta/portal-de-agendamento.git
     ```
 
 2. **Navegue até a pasta do projeto:**
     ```bash
-    cd sistema-gerenciamento-salas
+    cd portal-de-agendamento
     ```
 
 3.  **Abra o projeto:**

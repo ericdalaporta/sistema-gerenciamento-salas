@@ -67,16 +67,16 @@ config:
   layout: dagre
 ---
 flowchart TD
- subgraph exemplo["Portal de Agendamento"]
+ subgraph exemplo["Fluxograma do Portal de Agendamento"]
         B("Página de Login")
         A[/"Usuário abre index.html"/]
         C{"Escolhe Perfil"}
         D("Painel principal")
         E("Página do Aluno")
-        F["Visualizar Ambientes"]
+        F["Visualizar Salas"]
         G["Adicionar Sala"]
         H["Agendar Sala"]
-        I["Visualizar Agendamentos"]
+        I["Visualizar Salas"]
   end
     A --> B
     B --> C

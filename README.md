@@ -9,7 +9,7 @@ Sistema web front-end para agendamento e gerenciamento de ambientes universitár
 - [Pré-requisitos](#pré-requisitos)  
 - [Instalação](#instalação)  
 - [Instruções de Uso](#instruções-de-uso)  
-- [Fluxo do Sistema](#fluxo-do-sistema)  
+- [Fluxograma do Sistema](#fluxo-do-sistema)  
 - [Contato](#contato)  
 - [Bibliografia](#bibliografia)  
 
@@ -57,7 +57,7 @@ Para executar e testar a aplicação, siga os passos:
     * Clicar em **"Adicionar Sala"** para cadastrar um novo ambiente.
     * Clicar em **"Agendar"** em um dos cards para marcar um horário, definindo período, dias da semana e disciplina.
 
-## Fluxo do Sistema
+## Fluxograma do Sistema
 
 ```mermaid
 ---
